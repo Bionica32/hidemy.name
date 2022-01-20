@@ -3,6 +3,7 @@ from httpx_socks import SyncProxyTransport
 from threading import Thread, active_count
 from tqdm import tqdm
 import time
+import os
 def check():
     check_input = input("Which proxy type need to check? (1 - http(s), 2 - socks4, 3 - socks5, Enter - all): ")
     if check_input == "1":
